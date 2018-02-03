@@ -1,7 +1,13 @@
+<!doctype html>
 <html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
 <body>
-<h1>Hiya!</h1>
-<?php if (true) echo "Hehe!" ?>
-<?php if (false) echo ":(" ?>
+<h1>Twisted Light Trails</h1>
+<?php
+echo "PHP is working"; ?>
 </body>
 </html>
