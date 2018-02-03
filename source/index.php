@@ -1,13 +1,9 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>Untitled Document</title>
-</head>
+<?php $title = "Pattern of the Month" ?>
 
-<body>
+<?php include "partials/head.php" ?>
+
 <h1>Twisted Light Trails</h1>
-<?php
-echo "PHP is working"; ?>
-</body>
-</html>
+<?php echo "PHP is working"; ?>
+
+
+<?php include "partials/foot.php" ?>
