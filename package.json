@@ -1,0 +1,14 @@
+{
+  "name": "twistedlighttrails",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:AlissaKennedy/twistedlighttrails.git",
+  "author": "Alissa Kennedy & Troy Alford",
+  "license": "MIT",
+  "devDependencies": {
+    "php-serve": "^0.0.1"
+  },
+  "scripts": {
+    "serve": "php-serve --hostname localhost --port 8000 source/index.php"
+  }
+}
