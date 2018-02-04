@@ -10,3 +10,4 @@
 <header class="gradient-border">
 <a href="#" title="home" class="brand">Twisted Light Trails</a>
 </header>
+<div class="container">
