@@ -16,10 +16,15 @@ header {
 }
 
 .gradient-border {
-	border-color: red;
-	border-image: linear-gradient(to right, #ff5005 0%,#9103b5 100%) 1 100% stretch;
-	border-style: solid;
-	border-width: 0 0 5px 0;
+  border-bottom: 5px;
+  position: relative;
+}
+.gradient-border:after {
+  background-image: linear-gradient(to right, #ff5005 0%,#9103b5 100%);
+  content: '';
+  height: 5px;
+  left: 0; bottom: 0; right: 0;
+  position: absolute;
 }
 
 .brand {
