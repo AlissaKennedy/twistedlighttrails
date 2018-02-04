@@ -27,6 +27,8 @@
 
     .title {
       grid-area: title;
+      line-height: 1em;
+      text-align: center;
     }
     .subtitle {
       grid-area: subtitle;
@@ -50,7 +52,7 @@
 
     .terms {
       grid-area: terms;
-      margin: 50px 100px 0;
+      width: 275px;
     }
   }
 
