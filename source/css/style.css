@@ -1,30 +1,33 @@
-* {box-sizing: border-box;}
+* {
+  box-sizing: border-box;
+}
 
 html, body {
-	padding: 0; 
-	margin: 0;}
+  margin: 0;
+	padding: 0;
+}
 
 header {
-	height: 75px;	
-	display: flex;
 	align-items: center;
-	justify-content: center;
 	background-color: black;
+	display: flex;
+	height: 75px;
+	justify-content: center;
 }
 
 .gradient-border {
-	border-width: 0 0 5px 0;
-	border-style: solid;
 	border-color: red;
 	border-image: linear-gradient(to right, #ff5005 0%,#9103b5 100%) 1 100% stretch;
+	border-style: solid;
+	border-width: 0 0 5px 0;
 }
 
 .brand {
-	text-align:center;
 	color:white;
-	text-decoration:none;
 	font-size:2em;
-	}
-.brand:hover {color:cyan;
-
+	text-align:center;
+	text-decoration:none;
+}
+.brand:hover {
+  color:cyan;
 }
