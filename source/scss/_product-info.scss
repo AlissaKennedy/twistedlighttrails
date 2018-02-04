@@ -24,6 +24,9 @@ $sections:
   .#{$section} { grid-area: $section; }
   }
 
+  .terms {
+    font-size: .8em;
+  }
   .title {
     line-height: 1em;
     text-align: center;
@@ -39,17 +42,20 @@ $sections:
 
   .dl-button {
     text-align: center;
+    white-space: nowrap;
   }
   .tos {
     display: grid;
-    grid-template-areas:
-      "terms"
-      "agree-label"
-      "dl-button"
-    ;
-    grid-template-rows: 80px 30px 80px;
     align-items: center;
     justify-items: center;
+  }
+
+  .made-with-love, .terms { padding: 0 20px; }
+
+  .made-with-love {
+    line-height: 1.5em;
+    text-align: center;
+    a { white-space: nowrap; }
   }
 
   .media {
@@ -81,7 +87,32 @@ $sections:
 /* LARGE format - Desktop/iPad */
 @media screen and (min-width: 801px) {
   .product.container {
+    grid-template-areas:
+      ". media"
+      "title media"
+      "subtitle media"
+      "tos media"
+      "made-with-love media"
+      "social-links media"
+      ". media"
+    ;
     grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto 40px 30px auto auto 80px auto;
+
+    .tos {
+      grid-template-areas:
+        "agree-label"
+        "dl-button"
+        "terms"
+      ;
+      grid-template-rows: 30px 80px auto;
+      padding: 25px 20px;
+    }
+
+    .media {
+      height: calc(100vh - 75px);
+      width: 100%;
+    }
   }
 }
 /* SMALL format - Narrow/Phone */
@@ -90,6 +121,7 @@ $sections:
     min-height: 100vh;
     width: 100%;
   }
+
   .product.container {
     grid-template-areas:
       "title"
@@ -101,20 +133,22 @@ $sections:
     ;
     grid-template-rows: 30px 20px auto auto 60px 30px;
 
+    .tos {
+      grid-template-areas:
+        "terms"
+        "agree-label"
+        "dl-button"
+      ;
+      grid-template-rows: 80px 30px 80px;
+    }
+    .title { font-size: 1em; }
+    .subtitle { font-size: .9em; }
+    .made-with-love, .media, .tos {
+      font-size: .8em;
+    }
     .media {
       height: calc(100vh - 125px);
       width: 100vw;
-    }
-    .made-with-love {
-      line-height: 1.5em;
-      text-align: center;
-      a { white-space: nowrap; }
-    }
-    .made-with-love, .terms { padding: 0 20px; }
-    .title { font-size: 1em; }
-    .subtitle { font-size: .9em; }
-    .made-with-love, .media, .terms, .tos {
-      font-size: .8em;
     }
   }
 }
