@@ -1,10 +1,8 @@
 @import url("https://use.typekit.net/lyb2yxk.css");
 @import url(./fontello/css/fontello-embedded.css);
-/* line 1, ../scss/style.scss */
 * {
   box-sizing: border-box; }
 
-/* line 4, ../scss/style.scss */
 html, body {
   margin: 0;
   padding: 0;
@@ -12,7 +10,17 @@ html, body {
   font-style: normal;
   font-weight: 300; }
 
-/* line 1, ../scss/_button.scss */
+.brand {
+  color: white;
+  font-size: 2em;
+  text-align: center;
+  text-decoration: none; }
+
+.brand, h1, h2, h3, h4 {
+  font-family: ff-cocon-pro, sans-serif;
+  font-style: italic;
+  font-weight: 400; }
+
 button, .button {
   background-color: #000;
   border: 2px solid #000;
@@ -21,12 +29,10 @@ button, .button {
   padding: 1em 2em;
   font-weight: bold;
   text-decoration: none; }
-  /* line 10, ../scss/_button.scss */
   button:hover, .button:hover {
     background-color: #fff;
     color: #000; }
 
-/* line 1, ../scss/_header.scss */
 body > header {
   align-items: center;
   background-color: black;
@@ -38,17 +44,28 @@ body > header {
   left: 0;
   right: 0; }
 
-/* line 1, ../scss/_gradients.scss */
+.link {
+  padding: 2px;
+  color: #000;
+  font-weight: bold; }
+
+.link:visited, .link:link {
+  text-decoration: none;
+  border-bottom: 2px solid #aa158e; }
+
+.link:hover, .link:active {
+  background-color: #aa158e;
+  color: #fff;
+  text-decoration: none; }
+
 .gradient-text {
   background: linear-gradient(to right, #ff5005 0%, #9103b5 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
 
-/* line 7, ../scss/_gradients.scss */
 .gradient-border {
   border-bottom: 5px; }
 
-/* line 10, ../scss/_gradients.scss */
 .gradient-border:after {
   background-image: linear-gradient(to right, #ff5005 0%, #9103b5 100%);
   content: '';
@@ -58,7 +75,6 @@ body > header {
   right: 0;
   position: absolute; }
 
-/* line 1, ../scss/_product-info.scss */
 .product.container {
   display: grid;
   grid-template-areas: "info video";
@@ -66,61 +82,39 @@ body > header {
   padding-top: 75px;
   height: 100vh;
   width: 100vw; }
-  /* line 9, ../scss/_product-info.scss */
   .product.container .info {
     background: white;
     display: grid;
     grid-area: info;
-    grid-template-areas: "title title" "subtitle subtitle" "tos-checkbox tos-label" "download download";
+    grid-template-areas: "title title" "subtitle subtitle" ". ." "tos-checkbox tos-label" "download download" "terms terms";
     grid-template-columns: auto auto;
-    grid-template-rows: 30px 25px 30px auto;
+    grid-template-rows: 40px 30px 30px 60px auto auto;
     align-content: center;
     justify-content: center;
     align-items: center;
     justify-items: center; }
-    /* line 26, ../scss/_product-info.scss */
     .product.container .info .title {
-      grid-area: title;
-      margin: 0 0 5px 0; }
-    /* line 30, ../scss/_product-info.scss */
+      grid-area: title; }
     .product.container .info .subtitle {
-      grid-area: subtitle;
-      margin: 0 0 5px 0; }
-    /* line 34, ../scss/_product-info.scss */
+      grid-area: subtitle; }
     .product.container .info label[for="terms-of-service"] {
       grid-area: tos-label;
       justify-self: flex-start; }
-    /* line 38, ../scss/_product-info.scss */
     .product.container .info #terms-of-service {
       grid-area: tos-checkbox;
       justify-self: flex-end; }
-    /* line 42, ../scss/_product-info.scss */
     .product.container .info .download.button {
       grid-area: download; }
-    /* line 44, ../scss/_product-info.scss */
     .product.container .info #terms-of-service:not(:checked) + .download.button {
       background-color: #ccc;
       border-color: #999;
       color: #999;
       pointer-events: none; }
-  /* line 52, ../scss/_product-info.scss */
+    .product.container .info .terms {
+      grid-area: terms;
+      margin: 50px 100px 0; }
   .product.container .media {
     background: greenyellow;
     background-position: center center;
     background-size: cover;
     grid-area: video; }
-
-/* line 20, ../scss/style.scss */
-.brand {
-  color: white;
-  font-size: 2em;
-  text-align: center;
-  text-decoration: none; }
-
-/* line 27, ../scss/style.scss */
-.brand, h1, h2, h3, h4 {
-  font-family: ff-cocon-pro, sans-serif;
-  font-style: italic;
-  font-weight: 400; }
-
-/*# sourceMappingURL=style.css.map */

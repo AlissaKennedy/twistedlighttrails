@@ -13,11 +13,13 @@
     grid-template-areas:
       "title title"
       "subtitle subtitle"
+      ". ."
       "tos-checkbox tos-label"
       "download download"
+      "terms terms"
     ;
     grid-template-columns: auto auto;
-    grid-template-rows: 30px 25px 30px auto;
+    grid-template-rows: 40px 30px 30px 60px auto auto;
     align-content: center;
     justify-content: center;
     align-items: center;
@@ -25,11 +27,9 @@
 
     .title {
       grid-area: title;
-      margin: 0 0 5px 0;
     }
     .subtitle {
       grid-area: subtitle;
-      margin: 0 0 5px 0;
     }
     label[for="terms-of-service"] {
       grid-area: tos-label;
@@ -46,6 +46,11 @@
       border-color: #999;
       color: #999;
       pointer-events: none;
+    }
+
+    .terms {
+      grid-area: terms;
+      margin: 50px 100px 0;
     }
   }
 
