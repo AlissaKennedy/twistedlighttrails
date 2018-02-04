@@ -9,7 +9,7 @@ html, body {
 	font-weight: 300;
 }
 
-/* @import url("https://use.typekit.net/lyb2yxk.css"); */
+@import url("https://use.typekit.net/lyb2yxk.css"); 
 
 @import './fontello/css/fontello-embedded.css';
 @import './_button';
@@ -23,11 +23,8 @@ html, body {
   text-align: center;
   text-decoration: none;
 }
-.brand:hover {
-  color: cyan;
-}
 
-.brand, h1, h2 {
+.brand, h1, h2, h3, h4 {
 	font-family: ff-cocon-pro, sans-serif;
 	font-style: italic;
 	font-weight: 400;

@@ -8,6 +8,6 @@
 <body>
 
 <header class="gradient-border">
-<a href="#" title="home" class="brand">Twisted Light Trails</a>
+<span class="brand">Twisted Light Trails</span>
 </header>
 <div class="container">

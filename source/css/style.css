@@ -1,3 +1,4 @@
+@import url("https://use.typekit.net/lyb2yxk.css");
 @import url(./fontello/css/fontello-embedded.css);
 /* line 1, ../scss/style.scss */
 * {
@@ -11,7 +12,6 @@ html, body {
   font-style: normal;
   font-weight: 300; }
 
-/* @import url("https://use.typekit.net/lyb2yxk.css"); */
 /* line 1, ../scss/_button.scss */
 button, .button {
   background-color: #000;
@@ -117,12 +117,8 @@ body > header {
   text-align: center;
   text-decoration: none; }
 
-/* line 26, ../scss/style.scss */
-.brand:hover {
-  color: cyan; }
-
-/* line 30, ../scss/style.scss */
-.brand, h1, h2 {
+/* line 27, ../scss/style.scss */
+.brand, h1, h2, h3, h4 {
   font-family: ff-cocon-pro, sans-serif;
   font-style: italic;
   font-weight: 400; }

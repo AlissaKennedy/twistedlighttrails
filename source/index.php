@@ -3,8 +3,8 @@
 
 <div class="product container">
   <div class="info">
-    <h3 class="title">Pattern of the Month</h3>
-    <h4 class="subtitle">Mardi Gras</h4>
+    <h2 class="title">LED Hoop Pattern of the Month</h2>
+    <h3 class="subtitle">Mardi Gras Beads</h3>
     <label for="terms-of-service">Terms of Service</label>
     <input id="terms-of-service" type="checkbox">
     <a href="patterns/mardi-gras-beads.bmp" disabled
