@@ -1,83 +1,120 @@
+$sections:
+  agree-label,
+  dl-button,
+  made-with-love,
+  media,
+  social-links,
+  subtitle,
+  terms,
+  title,
+  tos
+;
+
 .product.container {
+  align-content: center;
+  align-items: center;
+  background: white;
   display: grid;
-  grid-template-areas: "info video";
-  grid-template-columns: 1fr 2fr;
-  padding-top: 75px;
-  height: 100vh;
+  justify-content: center;
+  justify-items: center;
+  margin-top: 75px;
   width: 100vw;
 
-  .info {
-    background: white;
+  @each $section in $sections {
+  .#{$section} { grid-area: $section; }
+  }
+
+  .title {
+    line-height: 1em;
+    text-align: center;
+  }
+  #agree { display: none; }
+
+  #agree:not(:checked) + * > .download.button {
+    background-color: #ccc;
+    border-color: #999;
+    color: #999;
+    pointer-events: none;
+  }
+
+  .dl-button {
+    text-align: center;
+  }
+  .tos {
     display: grid;
-    grid-area: info;
     grid-template-areas:
-      "title title"
-      "subtitle subtitle"
-      ". ."
-      "tos-checkbox tos-label"
-      "download download"
-      "terms terms"
+      "terms"
+      "agree-label"
+      "dl-button"
     ;
-    grid-template-columns: auto auto;
-    grid-template-rows: 40px 30px 30px 60px auto auto;
-    align-content: center;
-    justify-content: center;
+    grid-template-rows: 80px 30px 80px;
     align-items: center;
     justify-items: center;
-
-    .title {
-      grid-area: title;
-      line-height: 1em;
-      text-align: center;
-    }
-    .subtitle {
-      grid-area: subtitle;
-    }
-    label[for="terms-of-service"] {
-      grid-area: tos-label;
-      justify-self: flex-start;
-    }
-    #terms-of-service {
-      grid-area: tos-checkbox;
-      justify-self: flex-end;
-    }
-    .download.button { grid-area: download; }
-
-    #terms-of-service:not(:checked) + .download.button {
-      background-color: #ccc;
-      border-color: #999;
-      color: #999;
-      pointer-events: none;
-    }
-
-    .terms {
-      grid-area: terms;
-      width: 275px;
-    }
   }
 
   .media {
     background: greenyellow;
     background-position: center center;
     background-size: cover;
-    grid-area: video;
-	position: relative;
+	  position: relative;
+
     .caption {
-		background-color: rgba(0, 0, 0, .75);
-		padding: 15px;
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		color:white;
-		font-weight: bold;
-		text-align: center;
-		text-shadow: 
-			#000 1px 1px 15px,
-			#000 1px -1px 15px,
-			#000 -1px 1px 15px,
-			#000 -1px -1px 15px
-		; 
+      background-color: rgba(0, 0, 0, .75);
+      padding: 15px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      color:white;
+      font-weight: bold;
+      text-align: center;
+      text-shadow:
+        #000 1px 1px 15px,
+        #000 1px -1px 15px,
+        #000 -1px 1px 15px,
+        #000 -1px -1px 15px
+      ;
 	  }
+  }
+}
+
+/* LARGE format - Desktop/iPad */
+@media screen and (min-width: 801px) {
+  .product.container {
+    grid-template-columns: 1fr 2fr;
+  }
+}
+/* SMALL format - Narrow/Phone */
+@media screen and (max-width: 800px) {
+  body, .container {
+    min-height: 100vh;
+    width: 100%;
+  }
+  .product.container {
+    grid-template-areas:
+      "title"
+      "subtitle"
+      "media"
+      "tos"
+      "made-with-love"
+      "social-links"
+    ;
+    grid-template-rows: 30px 20px auto auto 60px 30px;
+
+    .media {
+      height: calc(100vh - 125px);
+      width: 100vw;
+    }
+    .made-with-love {
+      line-height: 1.5em;
+      text-align: center;
+      a { white-space: nowrap; }
+    }
+    .made-with-love, .terms { padding: 0 20px; }
+    .title { font-size: 1em; }
+    .subtitle { font-size: .9em; }
+    .made-with-love, .media, .terms, .tos {
+      font-size: .8em;
+    }
   }
 }
