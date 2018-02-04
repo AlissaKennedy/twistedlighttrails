@@ -1,4 +1,4 @@
-<?php $title = "Pattern of the Month" ?>
+<?php $title = "LED Hoop Pattern Free Download" ?>
 <?php include "partials/head.php" ?>
 
 <div class="product container">
