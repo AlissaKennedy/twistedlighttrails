@@ -2,7 +2,7 @@
 <?php include "partials/head.php" ?>
 
 <div class="product container">
-  <h2 class="title">LED Hoop Pattern Download</h2>
+  <h2 class="title gradient-text">LED Hoop Pattern Download</h2>
   <h3 class="subtitle">Mardi Gras Beads</h3>
   <div class="tos">
     <label class="agree-label" for="agree">I Agree to Terms</label>
