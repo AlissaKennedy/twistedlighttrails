@@ -1,0 +1,16 @@
+.gradient-text {
+  background: linear-gradient(to right, #ff5005 0%,#9103b5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-border {
+  border-bottom: 5px;
+}
+.gradient-border:after {
+  background-image: linear-gradient(to right, #ff5005 0%,#9103b5 100%);
+  content: '';
+  height: 5px;
+  left: 0; bottom: 0; right: 0;
+  position: absolute;
+}

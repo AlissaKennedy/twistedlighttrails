@@ -1,0 +1,21 @@
+.product.container {
+  display: grid;
+  grid-template-areas: "info video";
+  grid-template-columns: 1fr 2fr;
+  padding-top: 75px;
+  height: 100vh;
+  width: 100vw;
+}
+
+.product .info {
+  background: green;
+  display: grid;
+  grid-area: info;
+  align-content: center;
+  justify-content: center;
+}
+
+.product .video {
+  background: greenyellow;
+  grid-area: video;
+}

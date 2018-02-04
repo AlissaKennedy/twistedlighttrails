@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+}
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: museo-sans, sans-serif;
+	font-style: normal;
+	font-weight: 300;
+}
+
+/* @import url("https://use.typekit.net/lyb2yxk.css"); */
+
+@import '../../fontello/css/fontello-embedded';
+@import './_button';
+@import './_header';
+@import './gradients';
+@import './_product-info';
+
+.brand {
+  color: white;
+  font-size: 2em;
+  text-align: center;
+  text-decoration: none;
+}
+.brand:hover {
+  color: cyan;
+}
+
+.brand, h1, h2 {
+	font-family: ff-cocon-pro, sans-serif;
+	font-style: italic;
+	font-weight: 400;
+}
+
+.container a {
+	padding:2px;
+	color: black;
+	font-weight:bold;
+}
+
+.container  a:visited, .container  a:link {
+	text-decoration: none;
+	border-bottom: 2px solid #00CCFF;
+}
+.container a:hover, .container a:active {
+	background-color: #00CCFF;
+	text-decoration:none;
+}
