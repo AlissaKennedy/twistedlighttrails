@@ -2,10 +2,6 @@
 # yarn lockfile v1
 
 
-commander@^2.9.0:
-  version "2.13.0"
-  resolved "https://registry.yarnpkg.com/commander/-/commander-2.13.0.tgz#6964bca67685df7c1f1430c584f07d7597885b9c"
-
 node-php-server@^0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/node-php-server/-/node-php-server-0.1.2.tgz#131a0509d603aece32f8fde412f52b9c4ae26628"
@@ -15,10 +11,3 @@ node-php-server@^0.1.2:
 open@*:
   version "0.0.5"
   resolved "https://registry.yarnpkg.com/open/-/open-0.0.5.tgz#42c3e18ec95466b6bf0dc42f3a2945c3f0cad8fc"
-
-php-serve@^0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/php-serve/-/php-serve-0.0.1.tgz#14f478164bbc889ae75d1a59512427ad74e181cc"
-  dependencies:
-    commander "^2.9.0"
-    node-php-server "^0.1.2"

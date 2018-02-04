@@ -6,9 +6,9 @@
   "author": "Alissa Kennedy & Troy Alford",
   "license": "MIT",
   "devDependencies": {
-    "php-serve": "^0.0.1"
+    "node-php-server": "^0.1.2"
   },
   "scripts": {
-    "serve": "php-serve --hostname localhost --port 8000 source/index.php"
+    "serve": "node dev/phpServer.js"
   }
 }
