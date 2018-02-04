@@ -5,8 +5,8 @@
   <h2 class="title gradient-text">LED Hoop Pattern Download</h2>
   <h3 class="subtitle">Mardi Gras Beads</h3>
   <div class="tos">
-    <label class="agree-label" for="agree">I Agree to Terms</label>
-    <input class="agree" id="agree" type="checkbox">
+	<input class="agree" id="agree" type="checkbox">
+	<label class="agree-label" for="agree">I Agree to Terms<span class="checkmark"></span></label>
     <div class="dl-button">
       <a href="patterns/mardi-gras-beads.bmp" download="mardi-gras-beads.bmp"
         class="download button">Download Hoop Pattern!</a>

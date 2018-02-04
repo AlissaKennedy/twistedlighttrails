@@ -33,7 +33,7 @@ $sections:
   }
   #agree { display: none; }
 
-  #agree:not(:checked) + * > .download.button {
+  #agree:not(:checked) ~ * > .download.button {
     background-color: #ccc;
     border-color: #999;
     color: #999;
