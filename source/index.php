@@ -10,7 +10,7 @@
     </div>
     <button class="download icon-download">Download</button>
   </div>
-  <div class="video">
+  <div class="media" style="background-image: url(media/mardi-gras-beads-hoop-pattern.jpg);">
   </div>
 </div>
 

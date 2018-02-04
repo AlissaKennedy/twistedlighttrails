@@ -15,7 +15,9 @@
   justify-content: center;
 }
 
-.product .video {
+.product .media {
   background: greenyellow;
+  background-position: center center;
+  background-size: cover;
   grid-area: video;
 }
