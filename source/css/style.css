@@ -229,7 +229,7 @@ body > header {
       white-space: nowrap; }
   /* line 61, ../scss/_product-info.scss */
   .product.container .media {
-    background: greenyellow;
+    background: black;
     background-position: center center;
     background-size: cover;
     position: relative; }
