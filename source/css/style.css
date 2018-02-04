@@ -1,8 +1,10 @@
 @import url("https://use.typekit.net/lyb2yxk.css");
 @import url(./fontello/css/fontello-embedded.css);
+/* line 1, ../scss/style.scss */
 * {
   box-sizing: border-box; }
 
+/* line 4, ../scss/style.scss */
 html, body {
   margin: 0;
   padding: 0;
@@ -10,17 +12,20 @@ html, body {
   font-style: normal;
   font-weight: 300; }
 
+/* line 1, ../scss/_brand.scss */
 .brand {
   color: white;
   font-size: 2em;
   text-align: center;
   text-decoration: none; }
 
+/* line 8, ../scss/_brand.scss */
 .brand, h1, h2, h3, h4 {
   font-family: ff-cocon-pro, sans-serif;
   font-style: italic;
   font-weight: 400; }
 
+/* line 1, ../scss/_button.scss */
 button, .button {
   background-color: #9103b5;
   border: 2px solid #9103b5;
@@ -29,10 +34,12 @@ button, .button {
   padding: 1em 2em;
   font-weight: bold;
   text-decoration: none; }
+  /* line 10, ../scss/_button.scss */
   button:hover, .button:hover {
     background-color: #aa158e;
     color: #fff; }
 
+/* line 1, ../scss/_header.scss */
 body > header {
   align-items: center;
   background-color: black;
@@ -44,28 +51,34 @@ body > header {
   left: 0;
   right: 0; }
 
+/* line 1, ../scss/_link.scss */
 .link {
   padding: 2px;
   color: #000;
   font-weight: bold; }
 
+/* line 6, ../scss/_link.scss */
 .link:visited, .link:link {
   text-decoration: none;
   border-bottom: 2px solid #aa158e; }
 
+/* line 10, ../scss/_link.scss */
 .link:hover, .link:active {
   background-color: #aa158e;
   color: #fff;
   text-decoration: none; }
 
+/* line 1, ../scss/_gradients.scss */
 .gradient-text {
   background: linear-gradient(to right, #ff5005 0%, #9103b5 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
 
+/* line 7, ../scss/_gradients.scss */
 .gradient-border {
   border-bottom: 5px; }
 
+/* line 10, ../scss/_gradients.scss */
 .gradient-border:after {
   background-image: linear-gradient(to right, #ff5005 0%, #9103b5 100%);
   content: '';
@@ -75,6 +88,7 @@ body > header {
   right: 0;
   position: absolute; }
 
+/* line 1, ../scss/_product-info.scss */
 .product.container {
   display: grid;
   grid-template-areas: "info video";
@@ -82,6 +96,7 @@ body > header {
   padding-top: 75px;
   height: 100vh;
   width: 100vw; }
+  /* line 9, ../scss/_product-info.scss */
   .product.container .info {
     background: white;
     display: grid;
@@ -93,35 +108,59 @@ body > header {
     justify-content: center;
     align-items: center;
     justify-items: center; }
+    /* line 28, ../scss/_product-info.scss */
     .product.container .info .title {
       grid-area: title;
       line-height: 1em;
       text-align: center; }
+    /* line 33, ../scss/_product-info.scss */
     .product.container .info .subtitle {
       grid-area: subtitle; }
+    /* line 36, ../scss/_product-info.scss */
     .product.container .info label[for="terms-of-service"] {
       grid-area: tos-label;
       justify-self: flex-start; }
+    /* line 40, ../scss/_product-info.scss */
     .product.container .info #terms-of-service {
       grid-area: tos-checkbox;
       justify-self: flex-end; }
+    /* line 44, ../scss/_product-info.scss */
     .product.container .info .download.button {
       grid-area: download; }
+    /* line 46, ../scss/_product-info.scss */
     .product.container .info #terms-of-service:not(:checked) + .download.button {
       background-color: #ccc;
       border-color: #999;
       color: #999;
       pointer-events: none; }
+    /* line 53, ../scss/_product-info.scss */
     .product.container .info .terms {
       grid-area: terms;
       width: 275px; }
+  /* line 59, ../scss/_product-info.scss */
   .product.container .media {
     background: greenyellow;
     background-position: center center;
     background-size: cover;
-    grid-area: video; }
+    grid-area: video;
+    position: relative; }
+    /* line 65, ../scss/_product-info.scss */
+    .product.container .media .caption {
+      background-color: rgba(0, 0, 0, 0.75);
+      padding: 15px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      color: white;
+      font-weight: bold;
+      text-align: center;
+      text-shadow: #000 1px 1px 15px, #000 1px -1px 15px, #000 -1px 1px 15px, #000 -1px -1px 15px; }
 
+/* line 1, ../scss/_social-media.scss */
 .icon-facebook, .icon-instagram, .icon-globe {
   color: #000;
   font-size: 1.2em;
   text-decoration: none; }
+
+/*# sourceMappingURL=style.css.map */

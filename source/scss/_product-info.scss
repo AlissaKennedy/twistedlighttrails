@@ -61,5 +61,23 @@
     background-position: center center;
     background-size: cover;
     grid-area: video;
+	position: relative;
+    .caption {
+		background-color: rgba(0, 0, 0, .75);
+		padding: 15px;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		color:white;
+		font-weight: bold;
+		text-align: center;
+		text-shadow: 
+			#000 1px 1px 15px,
+			#000 1px -1px 15px,
+			#000 -1px 1px 15px,
+			#000 -1px -1px 15px
+		; 
+	  }
   }
 }
