@@ -83,17 +83,17 @@ html, body {
   content: '\f308'; }
 
 /* '' */
-button {
+button, .button {
   background-color: #000;
   border: 2px solid #000;
   border-radius: 5px;
   color: #fff;
   padding: 1em 2em;
-  font-weight: bold; }
-
-button:hover {
-  background-color: #fff;
-  color: #000; }
+  font-weight: bold;
+  text-decoration: none; }
+  button:hover, .button:hover {
+    background-color: #fff;
+    color: #000; }
 
 body > header {
   align-items: center;
@@ -130,19 +130,41 @@ body > header {
   padding-top: 75px;
   height: 100vh;
   width: 100vw; }
-
-.product .info {
-  background: green;
-  display: grid;
-  grid-area: info;
-  align-content: center;
-  justify-content: center; }
-
-.product .media {
-  background: greenyellow;
-  background-position: center center;
-  background-size: cover;
-  grid-area: video; }
+  .product.container .info {
+    background: green;
+    display: grid;
+    grid-area: info;
+    grid-template-areas: "title title" "subtitle subtitle" "tos-checkbox tos-label" "download download";
+    grid-template-columns: auto auto;
+    grid-template-rows: 30px 25px 30px auto;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center; }
+    .product.container .info .title {
+      grid-area: title;
+      margin: 0 0 5px 0; }
+    .product.container .info .subtitle {
+      grid-area: subtitle;
+      margin: 0 0 5px 0; }
+    .product.container .info label[for="terms-of-service"] {
+      grid-area: tos-label;
+      justify-self: flex-start; }
+    .product.container .info #terms-of-service {
+      grid-area: tos-checkbox;
+      justify-self: flex-end; }
+    .product.container .info .download.button {
+      grid-area: download; }
+    .product.container .info #terms-of-service:not(:checked) + .download.button {
+      background-color: #ccc;
+      border-color: #999;
+      color: #999;
+      pointer-events: none; }
+  .product.container .media {
+    background: greenyellow;
+    background-position: center center;
+    background-size: cover;
+    grid-area: video; }
 
 .brand {
   color: white;
@@ -157,16 +179,3 @@ body > header {
   font-family: ff-cocon-pro, sans-serif;
   font-style: italic;
   font-weight: 400; }
-
-.container a {
-  padding: 2px;
-  color: black;
-  font-weight: bold; }
-
-.container a:visited, .container a:link {
-  text-decoration: none;
-  border-bottom: 2px solid #00CCFF; }
-
-.container a:hover, .container a:active {
-  background-color: #00CCFF;
-  text-decoration: none; }

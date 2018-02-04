@@ -5,19 +5,54 @@
   padding-top: 75px;
   height: 100vh;
   width: 100vw;
-}
 
-.product .info {
-  background: green;
-  display: grid;
-  grid-area: info;
-  align-content: center;
-  justify-content: center;
-}
+  .info {
+    background: green;
+    display: grid;
+    grid-area: info;
+    grid-template-areas:
+      "title title"
+      "subtitle subtitle"
+      "tos-checkbox tos-label"
+      "download download"
+    ;
+    grid-template-columns: auto auto;
+    grid-template-rows: 30px 25px 30px auto;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
 
-.product .media {
-  background: greenyellow;
-  background-position: center center;
-  background-size: cover;
-  grid-area: video;
+    .title {
+      grid-area: title;
+      margin: 0 0 5px 0;
+    }
+    .subtitle {
+      grid-area: subtitle;
+      margin: 0 0 5px 0;
+    }
+    label[for="terms-of-service"] {
+      grid-area: tos-label;
+      justify-self: flex-start;
+    }
+    #terms-of-service {
+      grid-area: tos-checkbox;
+      justify-self: flex-end;
+    }
+    .download.button { grid-area: download; }
+
+    #terms-of-service:not(:checked) + .download.button {
+      background-color: #ccc;
+      border-color: #999;
+      color: #999;
+      pointer-events: none;
+    }
+  }
+
+  .media {
+    background: greenyellow;
+    background-position: center center;
+    background-size: cover;
+    grid-area: video;
+  }
 }
