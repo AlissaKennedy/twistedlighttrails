@@ -6,9 +6,13 @@
   "author": "Alissa Kennedy & Troy Alford",
   "license": "MIT",
   "devDependencies": {
-    "node-php-server": "^0.1.2"
+    "concurrently": "^3.5.1",
+    "node-php-server": "^0.1.2",
+    "node-sass": "^4.7.2"
   },
   "scripts": {
-    "serve": "node dev/phpServer.js"
+    "develop": "concurrently --names 'SERVER,SCSS' -c 'magenta.bold,blue.bold' 'yarn serve' 'yarn compile-css'",
+    "serve": "node dev/phpServer.js",
+    "compile-css": "node-sass source/scss/ -o source/css/ --watch"
   }
 }
